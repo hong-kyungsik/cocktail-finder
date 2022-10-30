@@ -12,7 +12,7 @@ export default class Cocktail{
             if(data['strIngredient'+i]===null) continue;
             this.ingredients.push(new Ingredients(
                 data['strIngredient'+i],
-                data['strMeasure'+i]
+                data['strMeasure'+i]??''
             ));
         }
     }

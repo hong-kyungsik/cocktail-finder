@@ -9,7 +9,7 @@ export default class Cocktail{
                     </div>
                     <div class="mdc-card__content">
                         <h2 class="mdc-typography mdc-typography--headline6">${this.data.name}</h2>
-                        <h3 class="mdc-typography mdc-typography--subtitle2">${this.data.instructions??''}</h3>
+                        <h3 class="mdc-typography mdc-typography--subtitle2">${(this.data.instructions??'')}</h3>
                     </div>
                     <div class="mdc-card__content mdc-typography mdc-typography--body2">
                         <ul class="mdc-list mdc-list--two-line" name="ingredients-list">
